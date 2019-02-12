@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+    #menu_hr
+     {
+         background:#141414;
+         width:100%;
+         margin-top:-15px;
+     }
+     
+    #menu_hr ul
+     {
+         width:auto;
+         padding:10px 0px 8px 10px;
+         margin-left:-8px;
+     }
+     
+      #menu_hr ul li
+     {
+         list-style-type:none;
+         display:inline;
+         padding-right:2px;
+     }
+     
+     #menu_hr ul li a
+     {
+         background:#6699cc;
+         padding:7px 15px 7px 15px;
+         text-decoration:none;
+         color:#ffffff;   
+     }
+      
+      #menu_hr ul li a:hover
+     {
+         background:#ea6153;
+         padding:7px 15px 7px 15px;
+         text-decoration:none;
+         color:#ffffff;
+     }
+    
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div id="div_img">
+    <img src="Images/LIBRARY IMAGE HORIZONTAL.jpg" height="200px" width="100%" />
+    <div id="menu_hr">
+    
+    <ul>
+    <li > <a href="Default.aspx">Home</a></li>
+    <li > <a href="BookAssign.aspx">Books</a></li>
+    <li > <a href="Pending.aspx">Pending</a></li>
+    <li > <a href="#">Details</a></li>
+    
+    
+    </ul>
+    
+    </div>
+    <h1 style="color:Red; text-align:right;"><asp:Label ID="Label1" align="right" 
+            runat="server"></asp:Label></h1>
+    
+    </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
